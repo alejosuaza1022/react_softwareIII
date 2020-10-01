@@ -1,13 +1,185 @@
+
+html {
+  min-height: 100%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(-225deg, #7c797c 0%, #e6d6dd 52%, #70696c 100%);
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+h1, h2  {
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+.lista-citas .media {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 3rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border : 1px solid black; 
+  border-radius: 5%;
+}
+.lista-citas .media:last-of-type{
+  border-bottom: 0;
+}
+.lista-citas .media-body p {
+  margin:0;
+}
+.lista-citas .media-body button {
+  margin-top: 1rem!important;
+}
+.lista-citas .media-body span {
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+label {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.cita {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 200px;
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+  border-top: 1px;
+  color: black;
+}
+.required{
+  color :#000;
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+.cita p span {
+  font-weight: normal;
+
+}
+.cita:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cita:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.button.eliminar,
+.button.eliminar:hover {
+  background-color: #070707;
+  color: white;
+  margin-top: 2rem;
+}
+
+.alerta-error {
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family:  'Staatliches', cursive;
+} 
+
+.required{
+  color: rgb(190, 10, 10);
+}
+.myboton{
+  justify-content: center;  
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color:#000;
+
+}
+.mifoto{
+  margin : 20 0;
+  align-self: center;
+}
+.contenedorsumama{
+  width: 100%;
+  display: flex;
+}
+.my-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  
+}
+.my-column{
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.my-column1{
+  margin-left: 5px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mybox{
+  width: 700px;
+  margin-bottom: 20px;
+  border-radius: 3%;
+  border: 1px solid black;
+  display: flex;
+  margin: 10;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.myform{
+  margin: 0px 70px 30px 70px;
+}
+.mybox2{
+  width: 75%;
+  margin-bottom: 20px;
+
+  display: flex;
+  margin: 10;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.arow{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+.singlecard{
+  width: 30.33%;
+  margin: 2px;
 }
