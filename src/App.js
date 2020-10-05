@@ -18,6 +18,8 @@ function App() {
     bodyFormData.append("animal_breed", mascota.breed);
     bodyFormData.append("animal_type", mascota.type);
     bodyFormData.append("birth_date", mascota.fecha);
+    bodyFormData.append("description", mascota.description);
+    
     Object.values(mascota.images).forEach((x) =>
       bodyFormData.append("images", x)
     );
@@ -29,8 +31,8 @@ function App() {
       data: bodyFormData,
       config: config,
     })
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+      .then((response) => alert(response.data))
+      .catch((error) => alert("se ha producido un error"));
     setPets([...mascotas, mascota]);
   };
 

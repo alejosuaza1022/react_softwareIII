@@ -39,8 +39,8 @@ const Formulario = ({ createPet }) => {
       fecha.trim() === "" ||
       breed === "" ||
       type === "" ||
-      images === "" ||
-      description.trim() === ""
+      images === "" 
+     
     ) {
       setError(true);
       console.log(Mascota);

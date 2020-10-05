@@ -26,7 +26,7 @@ const Pet = ({ mascota, myclass }) => {
       </div>
       <button
             className="button eliminar u-full-width"
-            onClick={() => console.log("sisa")}
+            onClick={() => alert("función no disponible aún")}
           >
             Ver más
           </button>
